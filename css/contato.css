@@ -1,0 +1,194 @@
+.contatos {
+    justify-content: baseline;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    background-color: #222;
+    overflow: hidden;
+    border-radius: 5%;
+    height: 500px;
+    border:2px solid rgb(28, 221, 153);
+    color: rgb(028, 221, 153);
+    font-family: 'Press Start 2P', cursive;
+    text-align: start;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(028, 221, 153);
+    width: 45em;
+}
+
+.contatos p {
+    margin: 30px;
+}
+
+/* Botão neon */
+
+.contatos a {
+  margin: 30px;
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 10px;
+  color: #14fff1;
+  border: 8px solid rgb(28, 221, 153);
+  padding: 30px 60px;
+  border-radius: 16px;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px rgb(28, 221, 153);
+
+  box-shadow: inset 0 0 32px rgb(28, 221, 153), 0 0 32px rgb(28, 221, 153);
+
+  position: relative;
+}
+
+.contatos a::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(28, 221, 153);
+  left: 0;
+  top: 120%;
+
+  transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+  filter: blur(64px);
+  opacity: 0.7;
+}
+
+.contatos a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(28, 221, 153);
+  box-shadow: 0 0 128px 32px rgb(28, 221, 153);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.contatos a:hover::after,
+.contatos a:focus::after {
+  opacity: 1;
+}
+
+.contatos a:hover::before,
+.contatos a:focus::before {
+  opacity: 1;
+}
+
+.contatos a:hover,
+.contatos a:focus {
+  color: #202631;
+  text-shadow: none;
+}
+
+.contatos svg {
+
+    height: 35px;
+}
+/* Texto animado */
+body .box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    
+}
+
+.box2 .line {
+    background-color: #222;
+    overflow: hidden;
+    border-radius: 5%;
+    border: 2px solid rgb(28, 221, 153);
+    padding: 10px;
+    color: rgb(028, 221, 153);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8em;
+    white-space: nowrap;
+    margin: 0%;
+    
+}
+
+.typing-animation2 {
+    animation: blinkcursor2 500ms infinite normal, typing2 4s 1s infinite normal;
+}
+
+@keyframes typing2 {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 31.5em;
+    }
+}
+
+@keyframes blinkcursor2 {
+    from {
+        border-right-color: rgb(28, 221, 153);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media (max-width: 999px) {
+  .contatos {
+  margin-bottom: 50px;
+  margin-top: 100px;
+  background-color: #222;
+  overflow: hidden;
+  border-radius: 5%;
+  height: 600px;
+  border:2px solid rgb(28, 221, 153);
+  color: rgb(028, 221, 153);
+  font-family: 'Press Start 2P', cursive;
+  text-align: start;
+  font-family: 'Press Start 2P', cursive;
+  color: rgb(028, 221, 153);
+  width: 22em;
+  }
+
+   .contatos h1 {
+    margin-top: 20px;
+   }
+  .contatos p {
+    font-size: 0.7em;
+    margin: 20px;
+}
+
+.contatos a {
+  margin: 30px;
+  margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 10px;
+  color: #14fff1;
+  border: 8px solid rgb(28, 221, 153);
+  padding: 20px 60px;
+  border-radius: 16px;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 29px rgb(28, 221, 153);
+
+  box-shadow: inset 0 0 32px rgb(28, 221, 153), 0 0 32px rgb(28, 221, 153);
+
+  position: relative;
+}
+
+.box2 .line {
+  background-color: #222;
+  overflow: hidden;
+  border-radius: 5%;
+  border: 2px solid rgb(28, 221, 153);
+  padding: 10px;
+  color: rgb(028, 221, 153);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 0.6em;
+  white-space: nowrap;
+  margin: 0%;
+  
+}
+
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f2f7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animação texto */
+
+body .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    
+}
+
+.box .line {
+    background-color: #222;
+    overflow: hidden;
+    border-radius: 5%;
+    border: 2px solid rgb(28, 221, 153);
+    padding: 10px;
+    color: rgb(028, 221, 153);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    white-space: nowrap;
+    margin: 0%;
+    
+}
+
+.typing-animation {
+    animation: blinkcursor 500ms infinite normal, typing 4s 1s infinite normal;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 29.6em;
+    }
+}
+
+@keyframes blinkcursor {
+    from {
+        border-right-color: rgb(28, 221, 153);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@media (max-width: 999px) {
+    
+    body .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+        
+    }
+    
+    body img {
+        width: 300px;
+    }
+
+    .box .line {
+        background-color: #222;
+        overflow: hidden;
+        border-radius: 5%;
+        border: 2px solid rgb(28, 221, 153);
+        padding: 5px;
+        color: rgb(028, 221, 153);
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.7em;
+        white-space: nowrap;
+        margin: 0%;
+        
+    }
+
+    .typing-animation {
+        animation: blinkcursor 500ms infinite normal, typing 4s 1s infinite normal;
+    }
+    
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    
+        to {
+            width: 29.6em;
+        }
+    }
+    
+    @keyframes blinkcursor {
+        from {
+            border-right-color: rgb(28, 221, 153);
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
+}
